@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+//import Nome from './components/Nome'
+
+function App(){
+  //const [aluno, setAluno] = useState("João")
+  //function hundleChangeName(nome){setAluno(nome);}
+
+
+
+
+  return(
+    <div>
+    {/*<h1>Componente App</h1>
+    <h2>Olá: {aluno}</h2> <button onClick={ () => hundleChangeName('Vinicius') }>Mudar nome</button> */}
+    <h1>Cadatro</h1>
+    <form>
+      <label>Nome: </label><br/>
+      <input placeholder='Digite seu nome:'></input><br/>
+
+      <label>Email: </label><br/>
+      <input placeholder='Digite seu email:'></input><br/>
+
+      <label>Idade: </label><br/>
+      <input placeholder='Digite sua idade:'></input><br/><br/>
+      <button type='submit'>Registrar</button>
+    </form>
     </div>
   );
 }
 
 export default App;
+
